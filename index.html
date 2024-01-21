@@ -7,7 +7,7 @@
     </head>
 
   <body>
-    <script src="search-form.html"></script>
+    <div id="searchFormContainer"></div>
     <h1><span class="iniad">INIAD</span> オープンキャンパス</h1>
     <p>2017年9月9日に、<span class="iniad">INIAD</span>のオープンキャンパスを開催します。ふるってご参加ください。</p>
     <ul>
@@ -34,5 +34,12 @@
       <li><a href="concept.html">INIADのコンセプト</a></li>
       <li><a href="courses.html">4つのコース</a></li>
     </ul>
+    <script>
+      fetch('search-form.html')
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById('searchFormContainer').innerHTML = html;
+          });
+    </script>
   </body>
 </html>

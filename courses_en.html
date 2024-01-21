@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <script src="search-form.html"></script>
+    <div id="searchFormContainer"></div>
     <h1>Four courses of <span class="iniad">INIAD</span></h1>
     <p>   
 During the first year, all students immerse themselves in intensive learning of programming, as well as Japanese and English communication, establishing the foundation for information integration. <br>
@@ -20,5 +20,12 @@ From the second year onward, students diverge into four distinct courses, each d
       <li>INIAD Civil System Course</li>
     </ul>
     <img src="https://iniad-bucket-wp.storage.googleapis.com/k-1.jpg" alt="INIADのカリキュラム">
+    <script>
+      fetch('search-form.html')
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById('searchFormContainer').innerHTML = html;
+          });
+    </script>
   </body>
 </html>
