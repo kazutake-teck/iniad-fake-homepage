@@ -16,27 +16,28 @@
           </ul>
         </div>
       </div>
-    <div class="content">
-      <div id="searchFormContainer"></div>
-      <h1>Four courses of <span class="iniad">INIAD</span></h1>
-      <p>   
+      <div class="content">
+        <div id="searchFormContainer"></div>
+        <h1>Four courses of <span class="iniad">INIAD</span></h1>
+        <p>   
 During the first year, all students immerse themselves in intensive learning of programming, as well as Japanese and English communication, establishing the foundation for information integration. <br>
 From the second year onward, students diverge into four distinct courses, each dedicated to specialized lectures and exercises tailored to the respective field of study.
-      </p>
-      <ul>
-        <li>INIAD Engineering Course</li>
-        <li>INIAD Design Course</li>
-        <li>INIAD Business Course</li>
-        <li>INIAD Civil System Course</li>
-      </ul>
-      <img src="https://iniad-bucket-wp.storage.googleapis.com/k-1.jpg" alt="INIADのカリキュラム">
-      <script>
-        fetch('search-form.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('searchFormContainer').innerHTML = html;
-            });
-      </script>
+        </p>
+        <ul>
+          <li>INIAD Engineering Course</li>
+          <li>INIAD Design Course</li>
+          <li>INIAD Business Course</li>
+          <li>INIAD Civil System Course</li>
+        </ul>
+        <img src="https://iniad-bucket-wp.storage.googleapis.com/k-1.jpg" alt="INIADのカリキュラム">
+      </div>
     </div>
+    <script>
+      fetch('search-form.html')
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById('searchFormContainer').innerHTML = html;
+          });
+    </script>
   </body>
 </html>
