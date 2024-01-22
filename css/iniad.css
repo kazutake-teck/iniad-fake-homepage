@@ -77,3 +77,34 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+#commonSearchForm {
+    position: fixed;
+    top: 20px; /* Adjust the top distance as needed */
+    right: 20px; /* Adjust the right distance as needed */
+    z-index: 999;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#commonSearchForm input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#commonSearchForm input[type="submit"] {
+    background-color: #0032fadc;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#commonSearchForm input[type="submit"]:hover {
+    background-color: #0032fadc;
+}
