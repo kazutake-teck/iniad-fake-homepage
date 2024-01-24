@@ -1,0 +1,60 @@
+h1{
+  font-size: 100px;
+  color: #fff;
+}
+
+h2{
+  font-size: 75px;
+  color: #23ade5;
+}
+
+hr {
+ border: 0;
+  height: 1px;
+  background-color: #23ade5;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  Padding: 0;
+
+}
+.title {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+	height: 160px;
+  padding: 50,0,50,0;
+  background-color: #23ade5;
+}
+
+.week-menu,.day-menu {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
+
+.day-menu {
+  margin-top: 20px;
+}
+
+.content-a,.content-b,.content-c{
+  display: flex;
+  flex: 1;
+}
+
+.left-a,.left-b,.left-c,.right-a,.right-b,.right-c{
+  width: 540px;
+  height: 400px;
+  padding-left: 20px;
+}
+
+.container img {
+  width: 95%;
+  height: 350px;
+}
+
