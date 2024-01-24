@@ -7,12 +7,41 @@
   </head>
 
   <body>
-    <h1><span class="iniad">INIAD</span> の4つのコース</h1>
-    <ul>
-      <li>情報連携エンジニアリング・コース</li>
-      <li>情報連携デザイン・コース</li>
-      <li>情報連携ビジネス・コース</li>
-      <li>情報連携シビルシステム・コース</li>
-    </ul>    
+    <div id="searchFormContainer"></div>
+    <div id="container">
+      <div class ="sidebar">
+        <div class="menu">
+          <img
+          src="img/iniad-logo-w.png">
+          <ul>
+            <li><a href="index.html">オープンキャンパス特設サイト</a></li>
+            <li><a href="concept.html">INIADのコンセプト</a></li>
+            <li><a href="courses.html" id="highlighted-section">4つのコース</a></li>
+            <li><a href="index_en.html">Jananese/English</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1><span class="iniad">INIAD</span> の4つのコース</h1>
+        <p>
+        1年次は、すべての学生がプログラミングと日・英コミュニケーションを集中的に学び、情報連携の素地を身につけます。<br>
+        2年次からは、4つのコースに分かれてコース毎の専門的な講義・演習を履修します。
+        </p>
+        <ul>
+          <li>情報連携エンジニアリング・コース</li>
+          <li>情報連携デザイン・コース</li>
+          <li>情報連携ビジネス・コース</li>
+          <li>情報連携シビルシステム・コース</li>
+        </ul>
+        <img src="https://iniad-bucket-wp.storage.googleapis.com/k-1.jpg" alt="INIADのカリキュラム">
+      </div>
+    </div>
+    <script>
+      fetch('search-form.html')
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById('searchFormContainer').innerHTML = html;
+          });
+    </script>
   </body>
 </html>

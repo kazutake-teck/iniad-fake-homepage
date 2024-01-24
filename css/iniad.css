@@ -1,36 +1,116 @@
 body {
-  background-color: #794c13;
-  color: #FE4261;
+  margin:0;
+  background-color: #ffffff;
+  color: #000000; 
+  font-family: sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar{
+  width: 30%;  
+  color:#ffffff;
+  background-color: #001771;
+  margin: 10px 0 10px 0;
+  padding:10px 20px 10px 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.menu li{
+  padding: 5px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+#highlighted-section {
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #c9c6c6;
 }
 
 h1 {
   font-size: 24px;
   text-align: center;
+  text-shadow: 2px 2px 2px #c9c6c6;
 }
 
 h2 {
   font-size: 20px;
   color: #000000;
-  border-bottom: solid 1px #cc0000;
+  border-bottom: solid 1px #0032fadc;
 }
 
 h3 {
   font-size: 18px;
   padding-left: 4px;
-  border-left: solid 4px #cc0000;
+  border-left: solid 4px #0032fadc;
 }
 
 #schedule {
   padding: 10px 20px 10px 20px;
-  background-color: #9933ff;
+  background-color: #dae9ff;
 }
 
 .iniad {
-  color: #00cc00;
+  color: #0032fadc;
 }
 
 .time {
   font-weight: bold;
-  color: #cc0000;
+  color: #0032fadc;
   font-size: 30px;
+}
+
+.content{
+  width: 70%;
+  margin: 10px 0 10px 0;
+  padding: 20px;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  margin: 3px 3px 3px 3px;
+}
+
+#commonSearchForm {
+    position: fixed;
+    top: 20px; /* Adjust the top distance as needed */
+    right: 20px; /* Adjust the right distance as needed */
+    z-index: 999;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#commonSearchForm input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#commonSearchForm input[type="submit"] {
+    background-color: #0032fadc;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#commonSearchForm input[type="submit"]:hover {
+    background-color: #0032fadc;
 }
