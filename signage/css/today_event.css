@@ -1,0 +1,31 @@
+h1{
+	font-size: 10vw;
+	color: #ffffff;
+	background-color: #23ade5;
+	text-align: center;
+	padding: 5px;
+}
+
+h2{
+	font-size: 7vw;
+	color: #23ade5;
+	text-align: center;
+	padding: 5px;
+  }
+
+.schedule_place{
+	padding-left: 40px;
+	font-size: 5vw;
+	padding: 5px;
+}
+
+.note{
+	color: #B22D35;
+	padding: 5px;
+}
+
+p{
+	text-align: center;
+	padding: 5px;
+}
+
