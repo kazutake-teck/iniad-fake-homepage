@@ -1,11 +1,17 @@
 h1{
   font-size: 100px;
   color: #fff;
+  font-family: Consolas;
 }
 
 h2{
   font-size: 75px;
   color: #23ade5;
+  font-family: Consolas;
+}
+
+h3{
+  font-family: Consolas;
 }
 
 hr {
@@ -13,7 +19,6 @@ hr {
   height: 1px;
   background-color: #23ade5;
 }
-
 
 .container {
   display: flex;
