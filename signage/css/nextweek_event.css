@@ -24,3 +24,24 @@ p{
     font-size: 2vw;
 	padding: 5px;
 }
+
+table{
+	margin: 10px;
+}
+
+th {
+    font-family : "Arial", sans-serif;
+    font-size : 0.8em;
+    background: #23ade5;
+	text-align: center;
+    padding: 4px;
+}
+
+td {
+    font-family : "Arial", sans-serif;
+    font-size : 0.8em;
+    background: #eeeeee;
+	text-align: center;
+    padding: 4px;
+}
+
