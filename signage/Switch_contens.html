@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Signage</title>
+  <style>
+    .content {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div id="content1" class="content active">
+  <!-- ここに1つ目のコンテンツのHTMLを記述 -->
+  <h1>コンテンツ1</h1>
+  <p>このコンテンツは表示されています。</p>
+</div>
+
+<div id="content2" class="content">
+  <!-- ここに2つ目のコンテンツのHTMLを記述 -->
+  <h1>コンテンツ2</h1>
+  <p>このコンテンツは非表示です。</p>
+</div>
+
+<div id="content3" class="content">
+  <!-- ここに3つ目のコンテンツのHTMLを記述 -->
+  <h1>コンテンツ3</h1>
+  <p>このコンテンツも非表示です。</p>
+</div>
+
+<script>
+  // コンテンツの切り替えを行う関数
+  function switchContent() {
+    // 現在表示中のコンテンツを非表示にする
+    var activeContent = document.querySelector('.content.active');
+    activeContent.classList.remove('active');
+
+    // 次のコンテンツを表示する
+    var nextContent = activeContent.nextElementSibling || document.querySelector('.content:first-child');
+    nextContent.classList.add('active');
+  }
+
+  // 5秒ごとにコンテンツを切り替える
+  setInterval(switchContent, 5000);
+</script>
+
+</body>
+</html>
