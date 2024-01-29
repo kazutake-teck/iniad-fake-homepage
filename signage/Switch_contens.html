@@ -1,3 +1,4 @@
+<!-- main.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,23 +17,250 @@
 </head>
 <body>
 
-<div id="content1" class="content active">
-  <!-- ここに1つ目のコンテンツのHTMLを記述 -->
-  <h1>コンテンツ1</h1>
-  <p>このコンテンツは表示されています。</p>
+<!-- コンテンツを表示するコンテナ -->
+<div id="contentContainer" class="content active">
+  <!-- ここに初期コンテンツのHTMLを記述 -->
+  <!DOCTYPE html>
+  <html>
+   <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Pragma" content="no-cache" />
+   <meta http-equiv="cache-control" content="no-cache" />
+   <meta http-equiv="expires" content="0" />
+  
+   <title>INIAD - Signage</title>
+  
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/today_event.css" rel="stylesheet">
+   </head>
+   <body id="black">
+    <!-- header -->
+    <div class="wrap">
+     <header class="cf">
+      <img src="img_fixed/logo-b.png">
+     </header>
+     <!-- contents -->
+     <h1>本日のイベント</h1>
+     <h2>DevOpsコース 最終講義</h2>
+     <h2>戸田建設 様</h2>
+     <div class="schedule_place">
+        <p>開催日 : 1月31日（水）9:00～12:00</p>
+        <p>会  場 : 5階 5209教室</p>
+     </div>
+     <img src="img_fixed/today_event/floormap.jpg" width="400px" height="280px">
+     <p class="note">※ 赤い点線の経路で入退室をお願いいたします</p>
+     
+     <!-- footer -->
+     <footer>
+      <img src="img_fixed/logo2-b.png" width="140px" height="60px">
+     </footer>
+    </div>
+  
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+   </body>
+  </html>
 </div>
 
-<div id="content2" class="content">
-  <!-- ここに2つ目のコンテンツのHTMLを記述 -->
-  <h1>コンテンツ2</h1>
-  <p>このコンテンツは非表示です。</p>
+<!-- content2.html -->
+<div id="contentContainer" class="content active">
+  <!-- ここに2番目のHTMLを記述 -->
+  <!DOCTYPE html>
+  <html>
+   <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Pragma" content="no-cache" />
+   <meta http-equiv="cache-control" content="no-cache" />
+   <meta http-equiv="expires" content="0" />
+  
+   <title>nextweek_event</title>
+  
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/nextweek_event.css" rel="stylesheet">
+   </head>
+  
+  <body>
+    <body id="black">
+    <!-- header -->
+      <div class="wrap">
+          <header class="cf">
+          <img src="img_fixed/logo-b.png">
+          </header>
+    <!-- contents -->       
+    <h1>来週のイベント</h1>
+    <p>来週予定されているイベントは以下の通りです。</p>
+    <table>
+      <tr>
+        <th></th>
+        <th>日にち</th>
+        <th>内容</th>
+        <th>時間</th>
+        <th>場所</th>
+        <th>備考</th>
+      </tr>
+      <tr>
+        <th><b>月</b></td>
+        <td>△/△</td>
+        <td>　○　○　○　○　</td>
+        <td>●●:●●～●●:●●</td>
+        <td>　■階　○○○○</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th><b>火</b></td>
+        <td>△/△</td>
+        <td>　○　○　○　○　</td>
+        <td>●●:●●～●●:●●</td>
+        <td>　■階　○○○○</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th><b>水</b></td>
+        <td>△/△</td>
+        <td>　○　○　○　○　</td>
+        <td>●●:●●～●●:●●</td>
+        <td>　■階　○○○○</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th><b>木</b></td>
+        <td>△/△</td>
+        <td>　○　○　○　○　</td>
+        <td>●●:●●～●●:●●</td>
+        <td>　■階　○○○○</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th><b>金</b></td>
+        <td>△/△</td>
+        <td>　○　○　○　○　</td>
+        <td>●●:●●～●●:●●</td>
+        <td>　■階　○○○○</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th><b>土日</b></td>
+        <td>　　―</td>
+        <td>　　―</td>
+        <td>　　―</td>
+        <td>　　―</td>
+        <td>　　―</td>
+      </tr>
+    </table>
+    <hr>
+    <h2>【問い合わせ】</h2>
+    <p>イベントについての問い合わせは下記までお願いします。</p>
+    <p>（担当）　■■、◇◇</p>
+    <P>（TEL）　:　000-0000-0000　,（E-mail）:xxxxxx@xxxx.co.jp</P>
+     <!-- footer -->
+  <footer>
+      <img src="img_fixed/logo2-b.png" width="140px" height="60px">
+  </footer>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  
+  </html>
 </div>
 
-<div id="content3" class="content">
-  <!-- ここに3つ目のコンテンツのHTMLを記述 -->
-  <h1>コンテンツ3</h1>
-  <p>このコンテンツも非表示です。</p>
+<!-- content3.html -->
+<div id="contentContainer" class="content active">
+  <!-- ここに3番目のHTMLを記述 -->
+  <!DOCTYPE html>
+  <html>
+   <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Pragma" content="no-cache" />
+   <meta http-equiv="cache-control" content="no-cache" />
+   <meta http-equiv="expires" content="0" />
+  
+   <title>INIAD - Signage</title>
+  
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/school cafeteria.css" rel="stylesheet">
+   </head>
+   <body id="black">
+    <!-- header -->
+    <div class="wrap">
+     <header class="cf">
+      <img src="img_fixed/logo-b.png">
+     </header>
+     
+     <!-- contents -->
+     <div class="container">
+      <div class="title">
+          <h1>School Cafeteria</h1>
+      </div>
+      <div class="week-menu">
+          <h2>Weekly  Menu</h2>
+      </div>
+  
+      <div class="content-a">
+        <div class="left-a">
+          <img src="img_fixed/school cafeteria/omuhayashi.jpeg">
+          <h3>オムハヤシ ￥〇〇〇(税込み)</h3>
+        </div>
+  
+        <div class="right-a">
+          <img src="img_fixed/school cafeteria/Bomb bowl.jpeg">
+          <h3>ばくだん丼 ￥〇〇〇(税込み)</h3>
+        </div>
+      </div>
+  
+      <div class="content-b">
+        <div class="left-b">
+          <img src="img_fixed/school cafeteria/ramen.jpeg">
+          <h3>もやし豚骨ラーメン ￥〇〇〇(税込み)</h3>
+        </div>
+  
+        <div class="right-b">
+          <img src="img_fixed/school cafeteria/oyakodon.jpg">
+          <h3>親子丼　￥〇〇〇(税込み)</h3>
+        </div>
+      </div>
+  
+      <div class="day-menu">
+          <hr>
+          <h2>Daily Menu（Wed）</h2>
+      </div>
+      <div class="content-c">
+        <div class="left-c">
+          <img src="img_fixed/school cafeteria/pork cutlet curry.jpeg">
+          <h3>カツカレー ￥〇〇〇(税込み)</h3>
+        </div>
+        <div class="right-c">
+          <img src="img_fixed/school cafeteria/curry udon.jpeg">
+          <h3>カレーうどん ￥〇〇〇(税込み)</h3>
+        </div>
+      </div>
+    </div>
+  
+     
+     <!-- footer -->
+     <footer>
+      <img src="img_fixed/logo2-b.png" width="140px" height="60px">
+     </footer>
+    </div>
+  
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+   </body>
+  </html>
+  
 </div>
+
 
 <script>
   // コンテンツの切り替えを行う関数
@@ -44,11 +272,35 @@
     // 次のコンテンツを表示する
     var nextContent = activeContent.nextElementSibling || document.querySelector('.content:first-child');
     nextContent.classList.add('active');
+
+    // 別のHTMLファイルを読み込む
+    var nextHtmlFile = 'content' + (parseInt(nextContent.id.slice(-1)) + 1) + '.html';
+    loadContent(nextHtmlFile, 'contentContainer');
   }
 
-  // 5秒ごとにコンテンツを切り替える
-  setInterval(switchContent, 5000);
+  // コンテンツを非同期に読み込む関数
+  function loadContent(url, targetId) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          document.getElementById(targetId).innerHTML = xhr.responseText;
+        } else {
+          console.error('Failed to load content');
+        }
+      }
+    };
+    xhr.open('GET', url, true);
+    xhr.send();
+  }
+
+  // 最初のコンテンツの表示
+  loadContent('today_event.html', 'contentContainer');
+
+  // 10秒ごとにコンテンツを切り替える
+  setInterval(switchContent, 10000);
 </script>
 
 </body>
 </html>
+
