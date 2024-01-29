@@ -1,5 +1,5 @@
 h1{
-	font-size: 3vw;
+	font-size: 50px;
 	color: #ffffff;
 	background-color: #23ade5;
 	text-align: center;
@@ -7,13 +7,13 @@ h1{
 }
 
 h2{
-	font-size: 2vw;
+	font-size: 50px;
 	color: #23ade5;
 	text-align: left;
 	padding: 5px;
   }
 tr{
-    font-size: 2vw;
+    font-size: 50px;
 	color: #000000;
 	text-align: left;
 	padding: 5px;
@@ -21,7 +21,7 @@ tr{
 
 p{
 	text-align: left;
-    font-size: 2vw;
+    font-size: 45px;
 	padding: 5px;
 }
 
@@ -31,7 +31,7 @@ table{
 
 th {
     font-family : "Arial", sans-serif;
-    font-size : 0.8em;
+    font-size : 40px;
     background: #23ade5;
 	text-align: center;
     padding: 4px;
@@ -39,7 +39,7 @@ th {
 
 td {
     font-family : "Arial", sans-serif;
-    font-size : 0.8em;
+    font-size : 50px;
     background: #eeeeee;
 	text-align: center;
     padding: 4px;
